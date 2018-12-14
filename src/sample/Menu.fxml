@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #800000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane layoutY="45.0" prefHeight="341.0" prefWidth="700.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="OutButtonAdmin" layoutX="277.0" layoutY="289.0" mnemonicParsing="false" onAction="#Exit" prefHeight="28.0" prefWidth="147.0" text="Выход" textFill="MAROON">
+               <font>
+                  <Font name="Lucida Fax Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="LisrArray" layoutX="167.0" layoutY="31.0" mnemonicParsing="false" onAction="#PassngeListShow" prefHeight="25.0" prefWidth="367.0" text="Список пассажиров" textFill="MAROON">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="SearchPasseng" layoutX="167.0" layoutY="81.0" mnemonicParsing="false" onAction="#searchOnClick" prefHeight="25.0" prefWidth="367.0" text=" Поиск " textFill="MAROON">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="EditPasseng" layoutX="167.0" layoutY="181.0" mnemonicParsing="false" onAction="#edditOldPassager" prefHeight="25.0" prefWidth="367.0" text="Редактрирование данных пасажира" textFill="MAROON">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DeletePasseng" layoutX="167.0" layoutY="234.0" mnemonicParsing="false" onAction="#deletePassagerInfo" prefHeight="25.0" prefWidth="367.0" text="Удалить все сведения о пассажире" textFill="MAROON">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddPasseng" layoutX="167.0" layoutY="131.0" mnemonicParsing="false" onAction="#createNewPassenger" prefHeight="25.0" prefWidth="367.0" text="Добавить пассажира" textFill="MAROON">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+        </AnchorPane>
+        <Label layoutX="277.0" layoutY="11.0" text="Airport 13" textFill="WHITE">
+            <font>
+                <Font name="Lucida Fax Regular" size="28.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="48.0" fitWidth="55.0" layoutX="430.0" layoutY="3.0">
+            <image>
+                <Image url="@DopFiles/samolet.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="48.0" fitWidth="55.0" layoutX="211.0" layoutY="3.0">
+            <image>
+                <Image url="@DopFiles/samolet.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
